@@ -7,6 +7,9 @@
   .darkMode {
     @apply dark:border-[#3b3b3b] dark:bg-[#292929] dark:text-[#d9d9d9];
   }
+  .darkApply{
+    @apply dark:bg-[#333] dark:text-white
+  }
 }
 @font-face {
   font-family: 'Pretendard';

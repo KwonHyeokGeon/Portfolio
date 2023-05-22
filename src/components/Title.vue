@@ -1,20 +1,18 @@
 <template>
-   <div class="max-w-7xl p-5 mx-auto bg-white rounded-md border darkMode">
-      <h3 class="relative after:absolute after:w-10 after:h-[2px] after:bg-black after:dark:bg-[#d9d9d9] after:-bottom-1 after:left-2/4 after:-translate-x-2/4 tracking-widest text-center text-xl sm:text-2xl lg:text-3xl">
-        {{ title }}
-      </h3>
-    </div>
+  <div class="max-w-4xl mx-auto darkApply">
+    <h3 class="relative tracking-widest font-extrabold text-xl flex items-center gap-x-2">
+      <img :src="require(`@/assets/images/profile.png`)" alt="프로필" class="w-7">{{ title }}
+    </h3>
+  </div>
 </template>
 
 <script>
 export default {
-  name:"TitlePage",
-  props:{
-    title : String
+  name: "TitlePage",
+  props: {
+    title: String
   }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
