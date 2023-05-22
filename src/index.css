@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .darkMode {
+    @apply dark:border-[#3b3b3b] dark:bg-[#292929] dark:text-[#d9d9d9];
+  }
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+  background-color: #f7f8f9;
+  font-family: 'Pretendard';
+}
+.dark body{background-color: #333;}
+
