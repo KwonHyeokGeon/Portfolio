@@ -1,12 +1,14 @@
 <template>
   <div class="max-w-4xl mx-auto mt-10 pb-8">
-    <Title title="프로필"></Title>
+    <Title title="프로필" img="profile"></Title>
     <div class="h-auto flex overflow-hidden mt-8 flex-wrap justify-between">
       <div class="basis-full mt-8 md:mt-0">
-        <div v-for="e in Content" :key="e" class="bg-white rounded-md border darkMode p-5 mb-8 last:mb-0">
-          <h3 class="text-base md:text-xl mb-4">◆ {{ e.title }}</h3>
-          <p class="mb-2 last:mb-0 text-sm md:text-base" v-if="e.desc"><span class="font-bold">{{ e.desc }}</span>{{
-            e.desc2 }}</p>
+        <div v-for="e in Content" :key="e" class="bg-white rounded-3xl border darkMode p-5 mb-8 last:mb-0">
+          <h3 class="text-base md:text-xl font-bold mb-4"> {{ e.title }}</h3>
+          <p class="mb-2 last:mb-0 text-sm md:text-base" v-if="e.desc"><span>{{ e.desc }}</span></p>
+          <template v-for="el in e.skill" :key="el">
+          <p class="mb-2 last:mb-0 text-sm md:text-sm" v-if="e.skill"><span class="flex gap-x-4"><img :src="require(`@/assets/images/${el}.svg`)" :alt="el" class="w-6">{{ el }}</span></p>
+          </template>
           <p class="mb-2 last:mb-0 text-sm md:text-base" v-for="(el, index) in e.date" :key="el">{{ el }}:{{
             e.dateDesc[index] }}</p>
         </div>
@@ -26,29 +28,32 @@ export default {
     return {
       Content: [
         {
-          title: "MIND",
-          desc: '"혼자 부딪혀봐야 온전히 내것이 된다"',
-          desc2: "는 마인드를 가지고 있어, 혼자 찾아보고 고민하여 문제를 해결하는 것을 좋아합니다.",
+          title: "소개",
+          desc: '"안녕하세요 프론트엔드 개발자 권혁건입니다"'
         },
         {
-          title: "EDUCATION",
+          title: "교육",
           date: [
             "2022.12.29 ~ 2023.06.12",
-            "2023.01.01 ~ 2023.01.01"
+            "2017.03.01 ~ 휴학"
           ],
           dateDesc: [
             "(디지털컨버전스) 스마트혼합-뷰(vue) 활용 프론트엔드 개발자 양성과정 B",
-            "영남대학교 졸업"
+            "영남대학교 문화인류학과"
           ]
         },
         {
-          title: "LICENSE",
-          date: [
-            "2022.08", "2022.07", "2022.06"
-          ],
-          dateDesc: [
-            "정보처리산업기사", "운전면허2종보통", "컴퓨터활용능력 1급"
-          ]
+          title: "스킬",
+          skill:[
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "VUE",
+            "TAILWINDCSS",
+            "SCSS",
+            "GITHUB",
+            "VERCEL"
+          ] 
         }
       ]
     }
