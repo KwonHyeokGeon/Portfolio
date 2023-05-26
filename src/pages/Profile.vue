@@ -45,14 +45,14 @@ export default {
         {
           title: "스킬",
           skill:[
-            "HTML",
-            "CSS",
-            "JAVASCRIPT",
-            "VUE",
-            "TAILWINDCSS",
-            "SCSS",
-            "GITHUB",
-            "VERCEL"
+            "Html",
+            "Css",
+            "Javascript",
+            "Vue.js",
+            "TailwindCss",
+            "Scss",
+            "GitHub",
+            "Vercel"
           ] 
         }
       ]
