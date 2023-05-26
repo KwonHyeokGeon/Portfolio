@@ -1,16 +1,18 @@
 <template>
-  <!-- <NavMenu @dark="DarkMode()"></NavMenu> -->
-  <Nav @MenuIndex="SectionMove($event)"  @dark="toggleDark()" :isDark="isDark"></Nav>
-  <div ref="section-0">
-    <Home></Home>
+  <div class="p-2">
+    <!-- <NavMenu @dark="DarkMode()"></NavMenu> -->
+    <Nav @MenuIndex="SectionMove($event)" @dark="toggleDark()" :isDark="isDark"></Nav>
+    <div ref="section-0">
+      <Home></Home>
+    </div>
+    <div ref="section-1">
+      <profile></profile>
+    </div>
+    <div ref="section-2">
+      <portfolio></portfolio>
+    </div>
+    <Footer></Footer>
   </div>
-  <div ref="section-1">
-    <profile></profile>
-  </div>
-  <div ref="section-2">
-    <portfolio></portfolio>
-  </div>
-  <Footer></Footer>
 </template>
 
 <script>
@@ -35,7 +37,7 @@ export default {
     SectionMove(index) {
       this.MenuIndex = index;
       const rect = this.ArrayList[this.MenuIndex].getBoundingClientRect();
-      const offset = rect.top + window.scrollY-60;
+      const offset = rect.top + window.scrollY - 60;
       window.scrollTo({
         top: offset,
         behavior: "smooth",
