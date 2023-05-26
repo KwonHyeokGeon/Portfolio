@@ -1,6 +1,12 @@
 <template>
   <div class="max-w-4xl mx-auto pt-12 mt-16 pb-8">
     <Title title="포트폴리오" img="portfolio"></Title>
+    <div class="w-full mt-10 grid grid-cols-2 gap-5">
+      <div v-for="e in src" :key="e">
+        <img :src="require(`@/assets/thumbnail/${e}.png`)" :alt="e"
+          class="rounded-lg w-[430px] h-[225px] shadow-2xl dark:shadow-zinc-500 hover:scale-105 transition-all">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -9,130 +15,19 @@ import Title from "../components/Title.vue";
 export default {
   name: "portfolioPage",
   methods: {},
+  data() {
+    return {
+      src: ['broadcast', 'calculator', 'parcel', 'quiz', 'ottugi', 'youtube'],
+      href: ['https://broadcast-two.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/']
+    }
+  },
   components: {
     Title,
   },
   computed: {
   },
-
-  data() {
-    return {
-    
-    };
-  },
 };
 </script>
 
 <style>
-.mokup-img > div {
-  position: absolute;
-  overflow: hidden;
-  bottom: 0;
-}
-.mokup-img > div:nth-child(1) {
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.mokup-img > div:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  width: 92%;
-  height: 62%;
-  background: url(../assets/images/preview.jpg) center top no-repeat;
-  left: 19px;
-  top: 20px;
-  background-size: cover;
-  transition: 5s;
-}
-.mokup-img > div:nth-child(2) {
-  width: 35%;
-  right: 0;
-}
-.mokup-img > div:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  width: 86%;
-  height: 82%;
-  background: url(../assets/images/preview.jpg) center top no-repeat;
-  left: 16px;
-  top: 26px;
-  background-size: cover;
-  transition: 5s;
-}
-.mokup-img > div:nth-child(3) {
-  width: 23%;
-  left: 0;
-}
-.mokup-img > div:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 95%;
-  background: url(../assets/images/preview.jpg) center top no-repeat;
-  left: 7px;
-  top: 7px;
-  background-size: cover;
-  transition: 5s;
-  border-radius: 5px;
-}
-.mokup-img > div:hover::after {
-  background-position: center bottom;
-}
-
-@media screen and (max-width: 1200px) {
-  .mokup-img {
-    flex-basis: 100%;
-    height: 500px;
-  }
-  .mokup-img > div:nth-child(1) {
-    width: 550px;
-  }
-  .mokup-img > div:nth-child(2) {
-    width: 184px;
-    right: 0;
-  }
-  .mokup-img > div:nth-child(3) {
-    width: 126px;
-    left: 0;
-  }
-  .mokup-img > div:nth-child(1)::after {
-    top: 23px;
-    height: 62%;
-    left: 21px;
-    width: 87%;
-  }
-  .mokup-img > div:nth-child(2)::after {
-    width: 85px;
-    top: 24px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .mokup-img {
-    height: 70.3125vw;
-  }
-  .mokup-img > div:nth-child(1) {
-    width: 100%;
-  }
-  .mokup-img > div:nth-child(2) {
-    width: 35%;
-  }
-  .mokup-img > div:nth-child(3) {
-    width: 20%;
-  }
-  .mokup-img > div:nth-child(1)::after {
-    width: 92.5%;
-    left: 3.8%;
-    top: 4.7%;
-  }
-  .mokup-img > div:nth-child(2)::after {
-    left: 8%;
-    top: 8%;
-  }
-  .mokup-img > div:nth-child(3)::after {
-    height: 92.5%;
-    left: 5.5%;
-    top: 2.5%;
-  }
-}
 </style>

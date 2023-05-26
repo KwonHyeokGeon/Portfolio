@@ -1,0 +1,20 @@
+{
+  "portfolio": {
+    "src": [
+      "broadcast",
+      "calculator",
+      "parcel",
+      "quiz",
+      "ottugi",
+      "youtube"
+    ],
+    "href": [
+      "https: //broadcast-two.vercel.app/",
+      "https://calculator-five-pied.vercel.app/",
+      "https://parcel-ten-beta.vercel.app/",
+      "https://quiz-one-gilt.vercel.app/",
+      "https://ottugi-clone.vercel.app/",
+      "https://youtube-clone-navy-five.vercel.app/"
+    ]
+  }
+}
