@@ -7,7 +7,7 @@
           class="rounded-lg w-full sm:w-3/4 md:w-full h-[225px] shadow-2xl dark:shadow-zinc-500 transition-all"
           @mouseenter="modalOn(index); modal = true">
         <div v-if="portfolio === index"
-          class="absolute top-0 left-0 flex flex-col justify-center w-full h-full px-3 bg-black/80 dark:bg-white/90 rounded-lg dark:text-neutral-500 text-neutral-400 transition-all"
+          class="absolute top-0 left-0 sm:left-1/2 md:left-0 sm:-translate-x-1/2 md:translate-x-0 sm:w-3/4 md:w-full flex flex-col justify-center w-full h-full px-3 bg-black/80 dark:bg-white/90 rounded-lg dark:text-neutral-500 text-neutral-400 transition-all"
           :class="!modal ? 'hidden' : 'block'" @mouseleave="modal = false">
           <p class="hover:text-white dark:hover:text-black">GitHub : <a :href="github[index]" target="_blank">{{ github[index] }}</a></p>
           <p class="hover:text-white dark:hover:text-black">Link : <a :href="deploy[index]" target="_blank">{{ deploy[index] }}</a></p>
