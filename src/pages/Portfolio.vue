@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-4xl mx-auto pt-12 mt-16 pb-8">
-    <Title title="포트폴리오" img="portfolio"></Title>
+    <Title title="프로젝트" img="portfolio"></Title>
     <div class="w-full mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div v-for="(e, index) in src" :key="e" class="relative sm:flex sm:justify-center md:block">
         <img :src="require(`@/assets/thumbnail/${e}.png`)" :alt="e"
