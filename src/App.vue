@@ -58,6 +58,9 @@ export default {
   },
   mounted() {
     this.ArrayList = this.$refs;
+    let currentDateTime = new Date();
+    let currentHour = currentDateTime.getHours();
+    (currentHour >= 17 ? this.isDark = true : this.isDark = false)
   },
 };
 </script>
