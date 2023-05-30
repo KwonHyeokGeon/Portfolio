@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-60 h-screen fixed top-0 left-0 bg-white z-50 dark:bg-gray-600 dark:text-white flex justify-center items-center overflow-hidden transition-all"
+    class="w-60 h-screen fixed top-0 bg-white z-50 dark:bg-gray-600 dark:text-white flex justify-center items-center overflow-hidden transition-all"
     :class="isOpen === true ? 'left-0' : '-left-96'">
     <img :src="require(`@/assets/images/delete.png`)" alt="닫기"
       class="w-10 top-16 left-5 cursor-pointer rounded-full p-1 dark:bg-white/40 bg-gray-500/60" 
