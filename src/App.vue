@@ -51,7 +51,6 @@ export default {
     return {
       isDark: useDark(),
       toggleDark: useToggle(useDark()),
-      Fontstyle: "",
       MenuIndex: "section-1",
       ArrayList: "",
     };
