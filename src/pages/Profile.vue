@@ -7,7 +7,8 @@
           <h3 class="text-base md:text-xl font-bold mb-4"> {{ e.title }}</h3>
           <p class="mb-2 last:mb-0 text-sm md:text-base" v-if="e.desc"><span>{{ e.desc }}</span></p>
           <template v-for="el in e.skill" :key="el">
-          <p class="mb-2 last:mb-0 text-sm md:text-sm" v-if="e.skill"><span class="flex gap-x-4"><img :src="require(`@/assets/images/${el}.svg`)" :alt="el" class="w-6">{{ el }}</span></p>
+            <p class="mb-2 last:mb-0 text-sm md:text-sm" v-if="e.skill"><span class="flex gap-x-4"><img
+                  :src="require(`@/assets/images/${el}-dark.svg`)" :alt="el" class="w-6">{{ el }}</span></p>
           </template>
           <p class="mb-2 last:mb-0 text-sm md:text-base" v-for="(el, index) in e.date" :key="el">{{ el }}:{{
             e.dateDesc[index] }}</p>
@@ -44,7 +45,7 @@ export default {
         },
         {
           title: "스킬",
-          skill:[
+          skill: [
             "Html",
             "Css",
             "Javascript",
@@ -53,9 +54,9 @@ export default {
             "Scss",
             "GitHub",
             "Vercel"
-          ] 
+          ]
         }
-      ]
+      ],
     }
   },
 

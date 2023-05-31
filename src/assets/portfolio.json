@@ -1,0 +1,57 @@
+{
+  "title": [
+    "농달",
+    "유튜브 클론코딩",
+    "오뚜기 클론코딩",
+    "일기예보",
+    "택배조회",
+    "계산기",
+    "퀴즈",
+    "애플 클론코딩"
+  ],
+  "stack": [
+    [
+      "#Vue.js",
+      "#tailwindcss",
+      "#Firebase",
+      "#Vuex",
+      "#Vue-router"
+    ],
+    [
+      "#Vue.js",
+      "#Scss",
+      "#Vuex",
+      "#Vue-router"
+    ],
+    [
+      "#Vue.js",
+      "#tailwindcss",
+      "#Vue-router"
+    ],
+    [
+      "#Vue.js",
+      "#tailwindcss"
+    ],
+    [
+      "#Vue.js",
+      "#tailwindcss",
+      "#택배조회 API"
+    ],
+    [
+      "#Vue.js",
+      "#tailwindcss",
+      "#Vue-router"
+    ],
+    [
+      "#Vue.js",
+      "#tailwindcss",
+      "#Vue-router",
+      "#TypeScript"
+    ],
+    [
+      "#Html",
+      "#Css",
+      "#JavaScript"
+    ]
+  ]
+}

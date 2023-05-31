@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-40">
-    <div class="max-w-4xl mx-auto pb-24 dark:text-white relative">
+  <div class="md:mt-40 mt-60">
+    <div class="max-w-4xl py-10 md:py-0 mx-auto pb-24 dark:text-white relative">
       <p class="flex items-center text-3xl md:text-4xl font-bold">권혁건<span class="mx-5">Kwon Hyeokgeon</span></p>
       <p class="mt-8 ml-4">✉️ email : weekend12@icloud.com</p>
       <p class="ml-4">📱 phone : 010-8338-6134</p>
@@ -14,12 +14,6 @@
 <script>
 export default {
   name: "HomePage",
-  props: {
-    langList: Object
-  },
-  mounted() {
-
-  },
 }
 </script>
 

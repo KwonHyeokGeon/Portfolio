@@ -1,17 +1,19 @@
 <template>
-  <div class="p-2">
-    <!-- <NavMenu @dark="DarkMode()"></NavMenu> -->
-    <Nav @MenuIndex="SectionMove($event)" @dark="toggleDark()" :isDark="isDark"></Nav>
-    <div ref="section-0">
-      <Home></Home>
+  <div>
+    <div class="p-2">
+      <!-- <NavMenu @dark="DarkMode()"></NavMenu> -->
+      <Nav @MenuIndex="SectionMove($event)" @dark="toggleDark()" :isDark="isDark"></Nav>
+      <div ref="section-0">
+        <Home></Home>
+      </div>
+      <div ref="section-1">
+        <Profile></Profile>
+      </div>
+      <div ref="section-2">
+        <portfolio></portfolio>
+      </div>
+      <Footer></Footer>
     </div>
-    <div ref="section-1">
-      <profile></profile>
-    </div>
-    <div ref="section-2">
-      <portfolio></portfolio>
-    </div>
-    <Footer></Footer>
   </div>
 </template>
 
@@ -55,6 +57,8 @@ export default {
       ArrayList: "",
     };
   },
+
+  emits: ['dark'],
   mounted() {
     this.ArrayList = this.$refs;
     let currentDateTime = new Date();
