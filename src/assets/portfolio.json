@@ -15,13 +15,15 @@
       "#tailwindcss",
       "#Firebase",
       "#Vuex",
-      "#Vue-router"
+      "#Vue-router",
+      "Axios"
     ],
     [
       "#Vue.js",
       "#Scss",
       "#Vuex",
-      "#Vue-router"
+      "#Vue-router",
+      "Axios"
     ],
     [
       "#Vue.js",
@@ -30,12 +32,13 @@
     ],
     [
       "#Vue.js",
-      "#tailwindcss"
+      "#tailwindcss",
+      "Axios"
     ],
     [
       "#Vue.js",
       "#tailwindcss",
-      "#택배조회 API"
+      "Axios"
     ],
     [
       "#Vue.js",
@@ -52,6 +55,18 @@
       "#Html",
       "#Css",
       "#JavaScript"
+    ]
+  ],
+  "description": [
+    [
+      "이달의 농산물 페이지",
+      "SNS로그인 페이지",
+      "GitHub 소스코드, 버전관리",
+      "Axios로 Youtube API 요청"
+    ],
+    [
+      "Axios로 Youtube API 요청",
+      ""
     ]
   ]
 }

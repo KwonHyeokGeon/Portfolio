@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <div class="p-2">
+  <div class="overflow-hidden">
+    <div class="px-2">
       <!-- <NavMenu @dark="DarkMode()"></NavMenu> -->
       <Nav @MenuIndex="SectionMove($event)" @dark="toggleDark()" :isDark="isDark"></Nav>
       <div ref="section-0">
         <Home></Home>
       </div>
       <div ref="section-1">
-        <Profile></Profile>
+        <Profile :isDark="isDark"></Profile>
       </div>
       <div ref="section-2">
-        <portfolio></portfolio>
+        <portfolio :isDark="isDark"></portfolio>
       </div>
-      <Footer></Footer>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -63,7 +63,7 @@ export default {
     this.ArrayList = this.$refs;
     let currentDateTime = new Date();
     let currentHour = currentDateTime.getHours();
-    (currentHour >= 17 ? this.isDark = true : this.isDark = false)
+    (currentHour >= 18 ? this.isDark = true : this.isDark = false)
   },
 };
 </script>
