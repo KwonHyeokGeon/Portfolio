@@ -9,7 +9,7 @@
             class="rounded-t-lg w-full sm:w-3/4 md:w-full h-[250px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:shadow-white/25 transition-all">
         </a>
         <div
-          class="rounded-b-lg w-full px-2 py-10 sm:w-3/4 md:w-full h-[200px] bg-neutral-700 shadow-md dark:shadow-white/20 transition-all">
+          class="rounded-b-lg w-full px-2 py-10 sm:w-3/4 md:w-full h-[200px] dark:bg-neutral-700 shadow-md dark:shadow-white/20 transition-all">
           <p class="text-2xl font-bold dark:text-white text-black text-center">{{ data.title[index] }}</p>
           <p class="flex gap-x-4 gap-y-2 flex-wrap dark:text-white text-black my-1"><span v-for="el in data.stack[index]" :key="el"
               class="px-2 rounded-md dark:text-white">{{ el }}</span></p>
@@ -47,7 +47,7 @@ export default {
       deplink: 'Vercel',
       // modal: false,
       src: ['nongdal', 'youtube', 'ottugi', 'broadcast', 'parcel', 'calculator', 'quiz', 'apple'],
-      deploy: ['https://food-two-pi.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://broadcast-two.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://kwonhyeokgeon.github.io/Apple-clone/'],
+      deploy: ['https://nongdal.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://broadcast-two.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://kwonhyeokgeon.github.io/Apple-clone/'],
       github: ['https://github.com/KwonHyeokGeon/food', 'https://github.com/KwonHyeokGeon/Youtube-clone', 'https://github.com/KwonHyeokGeon/Ottugi-clone', 'https://github.com/KwonHyeokGeon/broadcast', 'https://github.com/KwonHyeokGeon/parcel', 'https://github.com/KwonHyeokGeon/calculator', 'https://github.com/KwonHyeokGeon/quiz', 'https://github.com/KwonHyeokGeon/Apple-clone']
     }
   },
