@@ -23,7 +23,8 @@
       "#Scss",
       "#Vuex",
       "#Vue-router",
-      "#Axios"
+      "#Axios",
+      "#dotenv"
     ],
     [
       "#Vue.js",
