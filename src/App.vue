@@ -12,6 +12,9 @@
       <div ref="section-2">
         <portfolio :isDark="isDark"></portfolio>
       </div>
+      <div ref="section-3">
+        <GuestBook :isDark="isDark"></GuestBook>e
+      </div>
     </div>
     <Footer></Footer>
   </div>
@@ -21,10 +24,12 @@
 import Home from "./pages/Home.vue";
 import Profile from "./pages/Profile.vue";
 import Portfolio from "./pages/Portfolio.vue";
+import GuestBook from "./pages/GuestBook.vue";
 
 import Footer from "./components/Footer.vue";
 import Nav from "./components/Nav.vue";
 import { useDark, useToggle } from "@vueuse/core";
+import {db} from './firebase.js'
 // json파일을 import해서 data에 변수로 등록해서 활용가능
 
 export default {
@@ -34,6 +39,7 @@ export default {
     Home,
     Profile,
     Portfolio,
+    GuestBook
   },
   methods: {
     SectionMove(index) {
@@ -64,6 +70,7 @@ export default {
     let currentDateTime = new Date();
     let currentHour = currentDateTime.getHours();
     (currentHour >= 18 ? this.isDark = true : this.isDark = false)
+    db.collection('posts')
   },
 };
 </script>
