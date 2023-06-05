@@ -68,8 +68,7 @@ export default {
     return {
       isOpen: false,
       NavList: [
-        ["프로필", "포트폴리오"],
-        ["/profile", "/portfolio"],
+        ["프로필", "포트폴리오", "방명록"],
         ["user", "code", "folder-open"]
       ],
       logo: 'logo'

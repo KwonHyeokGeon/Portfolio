@@ -1,5 +1,5 @@
 <template>
-  <div class="md:mt-40 mt-60">
+  <div class="md:mt-40 mt-60 pb-8">
     <div class="max-w-4xl py-10 md:py-0 mx-auto pb-24 dark:text-white relative">
       <p class="flex items-center text-2xl sm:text-3xl md:text-4xl font-bold gap-5">권혁건<span>Kwon Hyeokgeon</span></p>
       <p class="mt-8 ml-4">✉️ email : weekend12@icloud.com</p>

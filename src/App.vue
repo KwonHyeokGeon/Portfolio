@@ -13,7 +13,7 @@
         <portfolio :isDark="isDark"></portfolio>
       </div>
       <div ref="section-3">
-        <GuestBook :isDark="isDark"></GuestBook>e
+        <GuestBook :isDark="isDark"></GuestBook>
       </div>
     </div>
     <Footer></Footer>
@@ -29,8 +29,7 @@ import GuestBook from "./pages/GuestBook.vue";
 import Footer from "./components/Footer.vue";
 import Nav from "./components/Nav.vue";
 import { useDark, useToggle } from "@vueuse/core";
-import {db} from './firebase.js'
-// json파일을 import해서 data에 변수로 등록해서 활용가능
+// import {db} from './firebase.js'
 
 export default {
   components: {
@@ -50,9 +49,6 @@ export default {
         top: offset,
         behavior: "smooth",
       });
-      // scrollTo - 자바스크립트 기본 메소드 이며, 페이지의 특정 위치로 스크롤이 가능
-      // window.scrollTo(x좌표, y좌표, 행동)
-      // behavior - 스크롤동작을 지정 "auto"기본값 "smooth"부드러운 애니메이션과 함께 스크롤
     },
   },
   data() {
@@ -67,10 +63,9 @@ export default {
   emits: ['dark'],
   mounted() {
     this.ArrayList = this.$refs;
-    let currentDateTime = new Date();
-    let currentHour = currentDateTime.getHours();
-    (currentHour >= 18 ? this.isDark = true : this.isDark = false)
-    db.collection('posts')
+    // let currentDateTime = new Date();
+    // let currentHour = currentDateTime.getHours();
+    // (currentHour >= 18 ? this.isDark = true : this.isDark = false)
   },
 };
 </script>
