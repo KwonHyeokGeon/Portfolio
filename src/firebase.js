@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import 'firebase/database';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAC93XECASfYTWAOK7-piqAaOT6vJaeUdg",
+    apiKey: process.env.VUE_FIREBASE_KEY,
     authDomain: "portfolio-guestbook-49c72.firebaseapp.com",
     projectId: "portfolio-guestbook-49c72",
     storageBucket: "portfolio-guestbook-49c72.appspot.com",
