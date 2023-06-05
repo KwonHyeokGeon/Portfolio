@@ -46,9 +46,9 @@ export default {
       gitlink: 'GitHub',
       deplink: 'Vercel',
       // modal: false,
-      src: ['nongdal', 'youtube', 'ottugi', 'broadcast', 'parcel', 'calculator', 'quiz', 'apple'],
-      deploy: ['https://nongdal.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://broadcast-two.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://kwonhyeokgeon.github.io/Apple-clone/'],
-      github: ['https://github.com/KwonHyeokGeon/food', 'https://github.com/KwonHyeokGeon/Youtube-clone', 'https://github.com/KwonHyeokGeon/Ottugi-clone', 'https://github.com/KwonHyeokGeon/broadcast', 'https://github.com/KwonHyeokGeon/parcel', 'https://github.com/KwonHyeokGeon/calculator', 'https://github.com/KwonHyeokGeon/quiz', 'https://github.com/KwonHyeokGeon/Apple-clone']
+      src: ['nongdal', 'portfolio','youtube', 'ottugi', 'broadcast', 'parcel', 'calculator', 'quiz', 'apple'],
+      deploy: ['https://nongdal.vercel.app/', 'https://portfolio-seven-pi-67.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://broadcast-two.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://kwonhyeokgeon.github.io/Apple-clone/'],
+      github: ['https://github.com/KwonHyeokGeon/food', 'https://github.com/KwonHyeokGeon/Portfolio', 'https://github.com/KwonHyeokGeon/Youtube-clone', 'https://github.com/KwonHyeokGeon/Ottugi-clone', 'https://github.com/KwonHyeokGeon/broadcast', 'https://github.com/KwonHyeokGeon/parcel', 'https://github.com/KwonHyeokGeon/calculator', 'https://github.com/KwonHyeokGeon/quiz', 'https://github.com/KwonHyeokGeon/Apple-clone']
     }
   },
   components: {
