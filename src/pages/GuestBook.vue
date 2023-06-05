@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-4xl mx-auto pt-12 mt-16 pb-8 ">
     <Title title="방명록" img="guestbook"></Title>
-    <div class="w-full bg-white rounded-3xl border darkMode p-2 shadow-lg mt-10">
+    <div class="w-full bg-white rounded-xl border darkMode p-2 shadow-lg mt-10">
       <div>
         <p v-for="e in posts" :key="e" class="flex gap-x-10 justify-between border-b px-4">
           <span class="w-6/12">{{ e.comment }}</span><span class="w-4/12">{{ e.name }}<span class="px-4 inline-block">|</span>{{e.date}}</span>
