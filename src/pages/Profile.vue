@@ -3,7 +3,7 @@
     <Title title="프로필" img="profile"></Title>
     <div class="h-auto flex overflow-hidden mt-8 flex-wrap justify-between">
       <div class="basis-full mt-8 md:mt-0">
-        <div v-for="e in Content" :key="e" class="bg-white rounded-xl darkMode p-5 mb-8 shadow-md">
+        <div v-for="e in Content" :key="e" class="bg-white rounded-xl border darkMode p-5 mb-8 shadow-md">
           <h3 class="text-base md:text-xl font-bold mb-4"> {{ e.title }}</h3>
           <p class="mb-2 last:mb-0 text-sm md:text-base" v-if="e.desc"><span>{{ e.desc }}</span></p>
           <template v-for="el in e.skill" :key="el">

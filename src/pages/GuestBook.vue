@@ -47,10 +47,9 @@ export default {
 
   },
   created() {
-    const databaseRef = database.ref();
-    databaseRef.child("posts").on("value", snapshot => {
+    const databaseRef = database.ref('posts').limitToFirst(10);
+    databaseRef.on("value", (snapshot) => {
       this.posts=snapshot.val();
-      console.log(snapshot.child('obama').val());
     });
   },
   props: {
