@@ -6,7 +6,7 @@
   <br>
   포트폴리오 사이트 제작
 
-![Broadcast Thumbnail](./public/portolio.png)  
+![portfolio Thumbnail](./public/portfolio.png)  
   <br>
 </p>
 
