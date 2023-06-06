@@ -44,7 +44,7 @@ Firebase를 사용하여 방명록기능을 구현했습니다. realtime databas
 ### 기능 4
 dotenv를 .env파일에 Apikey를 변수로 설정하여 숨김처리했습니다.
 ### 기능 5
-반응형 화면을 구현했습ㄴ디ㅏ
+반응형 화면을 구현했습니다.
 
 
 <p align="justify">
