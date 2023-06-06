@@ -59,8 +59,6 @@ export default {
       ArrayList: "",
     };
   },
-
-  emits: ['dark'],
   mounted() {
     this.ArrayList = this.$refs;
     // let currentDateTime = new Date();

@@ -55,6 +55,7 @@ export default {
             "TailwindCss",
             "Scss",
             "GitHub",
+            "Firebase",
             "Vercel"
           ]
         }

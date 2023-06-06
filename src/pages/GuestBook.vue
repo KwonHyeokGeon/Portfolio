@@ -58,7 +58,6 @@ export default {
   computed: {
     darkUpdate() {
       if (this.isDark === true) {
-        this.send
         return 'send-dark';
       } else {
         return 'send';
