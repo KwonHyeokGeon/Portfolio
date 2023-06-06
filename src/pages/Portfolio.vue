@@ -3,13 +3,13 @@
     <Title title="프로젝트" img="portfolio"></Title>
     <div class="w-full mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
       <div v-for="(e, index) in src" :key="e"
-        class="relative sm:flex sm:flex-col sm:items-center sm:justify-center md:block">
+        class="relative sm:flex sm:flex-col sm:items-center sm:justify-center md:block shadow-md dark:shadow-white/25">
         <a :href="deploy[index]" target="_blank">
           <img :src="require(`@/assets/thumbnail/${e}.png`)" :alt="e"
-            class="rounded-t-lg w-full sm:w-3/4 md:w-full h-[250px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:shadow-white/25 transition-all">
+            class="rounded-t-lg w-full h-[250px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)] dark:shadow-white/25 transition-all">
         </a>
         <div
-          class="rounded-b-lg w-full px-2 py-10 sm:w-3/4 md:w-full h-[200px] dark:bg-neutral-700 shadow-md dark:shadow-white/20 transition-all">
+          class="rounded-b-lg w-full px-2 py-10 h-[200px] dark:bg-neutral-700 shadow-md dark:shadow-white/20 transition-all">
           <p class="text-2xl font-bold dark:text-white text-black text-center">{{ data.title[index] }}</p>
           <p class="flex gap-x-4 gap-y-2 flex-wrap dark:text-white text-black my-1"><span v-for="el in data.stack[index]" :key="el"
               class="px-2 rounded-md dark:text-white">{{ el }}</span></p>
@@ -21,7 +21,7 @@
           </p>
         </div>
         <!-- <div v-if="portfolio === index"
-          class="absolute top-0 left-0 sm:left-1/2 md:left-0 sm:-translate-x-1/2 md:translate-x-0 sm:w-3/4 md:w-full flex flex-col justify-center w-full h-full px-3 bg-black/80 dark:bg-white/90 rounded-lg dark:text-neutral-500 text-neutral-400 transition-all"
+          class="absolute top-0 left-0 sm:left-1/2 md:left-0 sm:-translate-x-1/2 md:translate-x-0 flex flex-col justify-center w-full h-full px-3 bg-black/80 dark:bg-white/90 rounded-lg dark:text-neutral-500 text-neutral-400 transition-all"
           :class="!modal ? 'hidden' : 'block'" @mouseleave="modal = false">
         </div> -->
       </div>
