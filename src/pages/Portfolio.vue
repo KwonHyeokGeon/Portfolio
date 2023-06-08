@@ -11,13 +11,17 @@
         <div
           class="rounded-b-lg w-full px-2 py-10 h-[200px] dark:bg-neutral-700 shadow-md dark:shadow-white/20 transition-all">
           <p class="text-2xl font-bold dark:text-white text-black text-center">{{ data.title[index] }}</p>
-          <p class="flex gap-x-4 gap-y-2 flex-wrap dark:text-white text-black my-1"><span v-for="el in data.stack[index]" :key="el"
-              class="px-2 rounded-md dark:text-white">{{ el }}</span></p>
+          <p class="flex gap-x-4 gap-y-2 flex-wrap dark:text-white text-black my-1"><span v-for="el in data.stack[index]"
+              :key="el" class="px-2 rounded-md dark:text-white">{{ el }}</span></p>
           <p class="dark:text-white text-black flex justify-around absolute bottom-4 w-full">
-            <a :href="github[index]" target="_blank" class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img :src="require(`@/assets/images/${gitlink}.svg`)"
-                class="w-6"><span>GitHub</span></a>
-            <a :href="deploy[index]" target="_blank" class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img :src="require(`@/assets/images/${deplink}.svg`)"
-                class="w-6"><span>Deploy</span></a>
+            <a :href="github[index]" target="_blank"
+              class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
+                :src="require(`@/assets/images/${gitlink}.svg`)" class="w-6"><span>GitHub</span></a>
+            <a href="https://www.notion.so/08946f98ac5143e098ec9ce14675f525?pvs=4" class="border rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><span
+                v-if="index === 0">✨ Notion</span></a>
+            <a :href="deploy[index]" target="_blank"
+              class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
+                :src="require(`@/assets/images/${deplink}.svg`)" class="w-6"><span>Deploy</span></a>
           </p>
         </div>
         <!-- <div v-if="portfolio === index"
@@ -46,7 +50,7 @@ export default {
       gitlink: 'GitHub',
       deplink: 'Vercel',
       // modal: false,
-      src: ['nongdal', 'portfolio','youtube', 'ottugi', 'broadcast', 'parcel', 'calculator', 'quiz', 'apple'],
+      src: ['nongdal', 'portfolio', 'youtube', 'ottugi', 'broadcast', 'parcel', 'calculator', 'quiz', 'apple'],
       deploy: ['https://nongdal.vercel.app/', 'https://portfolio-seven-pi-67.vercel.app/', 'https://youtube-clone-navy-five.vercel.app/', 'https://ottugi-clone.vercel.app/', 'https://broadcast-two.vercel.app/', 'https://parcel-ten-beta.vercel.app/', 'https://calculator-five-pied.vercel.app/', 'https://quiz-one-gilt.vercel.app/', 'https://kwonhyeokgeon.github.io/Apple-clone/'],
       github: ['https://github.com/KwonHyeokGeon/food', 'https://github.com/KwonHyeokGeon/Portfolio', 'https://github.com/KwonHyeokGeon/Youtube-clone', 'https://github.com/KwonHyeokGeon/Ottugi-clone', 'https://github.com/KwonHyeokGeon/broadcast', 'https://github.com/KwonHyeokGeon/parcel', 'https://github.com/KwonHyeokGeon/calculator', 'https://github.com/KwonHyeokGeon/quiz', 'https://github.com/KwonHyeokGeon/Apple-clone']
     }
