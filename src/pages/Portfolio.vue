@@ -17,8 +17,8 @@
             <a :href="github[index]" target="_blank"
               class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
                 :src="require(`@/assets/images/${gitlink}.svg`)" class="w-6"><span>GitHub</span></a>
-            <a href="https://www.notion.so/08946f98ac5143e098ec9ce14675f525?pvs=4" class="border rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><span
-                v-if="index === 0">✨ Notion</span></a>
+            <a href="https://www.notion.so/08946f98ac5143e098ec9ce14675f525?pvs=4" v-if="index === 0"
+              class="border rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><span>✨ Notion</span></a>
             <a :href="deploy[index]" target="_blank"
               class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
                 :src="require(`@/assets/images/${deplink}.svg`)" class="w-6"><span>Deploy</span></a>
