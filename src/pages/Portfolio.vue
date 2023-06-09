@@ -17,7 +17,7 @@
             <a :href="github[index]" target="_blank"
               class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
                 :src="require(`@/assets/images/${gitlink}.svg`)" class="w-6"><span>GitHub</span></a>
-            <a href="https://www.notion.so/08946f98ac5143e098ec9ce14675f525?pvs=4" target="_blank" v-if="index === 0"
+            <a href="https://faithful-carp-d1b.notion.site/08946f98ac5143e098ec9ce14675f525?pvs=4" target="_blank" v-if="index === 0"
               class="border rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><span>✨ Notion</span></a>
             <a :href="deploy[index]" target="_blank"
               class="flex border gap-x-2 rounded-lg p-2 hover:bg-[#f1f1f1] dark:hover:bg-[#292929]"><img
